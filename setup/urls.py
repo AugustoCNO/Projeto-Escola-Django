@@ -9,6 +9,7 @@ router = routers.DefaultRouter()
 router.register('estudantes', EstudanteViewSet, basename='Estudantes')
 router.register('cursos', CursoViewSet, basename='Cursos')
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls))
